@@ -1,6 +1,6 @@
 /* Import components */
-import KeyFigureSummary from "../components/KeyFigureSummary";
 import Breadcrumb from "../components/layouts/Breadcrumb";
+import SummaryGenerateData from "../components/data/SummaryGenerateData";
 
 
 function Edge() {
@@ -16,7 +16,7 @@ function Edge() {
           </div>
           <div className="row ">
             <div className="col-xl-12 mx-auto ">
-              <KeyFigureSummary> </KeyFigureSummary>
+              <SummaryGenerateData> </SummaryGenerateData>
             </div>
           </div>
         </div>

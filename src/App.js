@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 
 /* Import layout's components */
 import NavBar from "./components/layouts/NavBar";
 import SideBar from "./components/layouts/SideBar";
 import Footer from "./components/layouts/Footer";
 
-/* Import Pages */
+/* Import views */
 import Home from "./views/Home";
 import Clusters from "./views/Clusters";
 import Edge from "./views/Edge";
@@ -25,7 +25,7 @@ function App() {
           <Route path="/home/clusters" element={<Clusters />} />
           <Route path="/home/edge" element={<Edge />} />
           <Route path="/home/devices" element={<Devices />} />
-          <Route element={() => <div>404 Not found </div>} />
+          <Route element={<Error/>} />
         </Routes>
 
         <Footer></Footer>

@@ -1,12 +1,12 @@
 /* Import components */
-import ClusterChart from "../components/ClusterChart";
-import KeyFigureSummary from "../components/KeyFigureSummary";
-import DataTable from "../components/DataTable";
-import DevicesVisitors from "../components/DevicesVisitors";
 import Breadcrumb from "../components/layouts/Breadcrumb";
-
+import GraphGenerateData from "../components/data/GraphGenerateData";
+import TableGenerateData from "../components/data/TableGenerateData";
+import SummaryGenerateData from "../components/data/SummaryGenerateData";
 
 function Home() {
+
+
 
   return (
     <>
@@ -14,21 +14,18 @@ function Home() {
         <div className="container-fluid p-0 ">
           <div className="row">
             <div className="col-12">
-            <Breadcrumb page="Overview"></Breadcrumb>
+              <Breadcrumb page="Overview"></Breadcrumb>
             </div>
           </div>
           <div className="row ">
             <div className="col-xl-8 ">
-              <ClusterChart> </ClusterChart>
+              <GraphGenerateData> </GraphGenerateData>
             </div>
             <div className="col-xl-4 ">
-              <KeyFigureSummary></KeyFigureSummary>
+              <SummaryGenerateData></SummaryGenerateData>
             </div>
-            <div className="col-xl-8">
-              <DataTable></DataTable>
-            </div>
-            <div className="col-xl-4 ">
-              <DevicesVisitors></DevicesVisitors>
+            <div className="col-xl-12">
+              <TableGenerateData></TableGenerateData>
             </div>
           </div>
         </div>

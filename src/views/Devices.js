@@ -1,8 +1,6 @@
 /* Import components */
-import DataTable from "../components/DataTable";
-import DevicesVisitors from "../components/DevicesVisitors";
 import Breadcrumb from "../components/layouts/Breadcrumb";
-
+import TableGenerateData from "../components/data/TableGenerateData";
 
 function Devices() {
   return (
@@ -15,11 +13,8 @@ function Devices() {
             </div>
           </div>
           <div className="row ">
-            <div className="col-xl-8 mx-auto ">
-              <DataTable> </DataTable>
-            </div>
-            <div className="col-xl-4 mx-auto ">
-              <DevicesVisitors> </DevicesVisitors>
+            <div className="col-xl-12 mx-auto ">
+              <TableGenerateData> </TableGenerateData>
             </div>
           </div>
         </div>

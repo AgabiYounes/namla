@@ -8,7 +8,7 @@ function NavBar() {
               <div className="sidebar_icon d-lg-none">
                 <i className="ti-menu"></i>
               </div>
-              <h3 className=" d-lg-block">Welcome Younes !</h3>
+              <h4 className=" d-lg-block">Dashboard</h4>
 
               <div className="header_right d-flex justify-content-between align-items-center">
                 <div className="header_notification_warp d-flex align-items-center">

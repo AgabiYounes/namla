@@ -1,6 +1,6 @@
 /* Import components */
-import ClusterChart from "../components/ClusterChart";
 import Breadcrumb from "../components/layouts/Breadcrumb";
+import GraphGenerateData from "../components/data/GraphGenerateData";
 
 function Clusters() {
   return (
@@ -14,7 +14,7 @@ function Clusters() {
           </div>
           <div className="row ">
             <div className="col-xl-12 mx-auto ">
-              <ClusterChart> </ClusterChart>
+              <GraphGenerateData> </GraphGenerateData>
             </div>
           </div>
         </div>

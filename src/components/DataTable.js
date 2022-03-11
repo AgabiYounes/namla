@@ -1,4 +1,6 @@
-function DataTable() {
+function DataTable({ data }) {
+
+
   return (
     <>
       <div className="white_card card_height_100 mb_30">
@@ -15,201 +17,36 @@ function DataTable() {
               <table className="table lms_table_active ">
                 <thead>
                   <tr>
-                    <th scope="col">title</th>
+                    <th scope="col">ID</th>
                     <th scope="col">Category</th>
-                    <th scope="col">Teacher</th>
-                    <th scope="col">Price</th>
+                    <th scope="col">OS</th>
+                    <th scope="col">Country</th>
+                    <th scope="col">First Login</th>
                     <th scope="col">Status</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">
-                      {" "}
-                      <a href="#" className="question_content">
-                        {" "}
-                        title here 1
-                      </a>
-                    </th>
-                    <td>Category name</td>
-                    <td>Teacher James</td>
-                    <td>$25.00</td>
-                    <td>
-                      <a href="#" className="status_btn">
-                        Active
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      {" "}
-                      <a href="#" className="question_content">
-                        {" "}
-                        title here 1
-                      </a>
-                    </th>
-                    <td>Category name</td>
-                    <td>Teacher James</td>
-                    <td>$25.00</td>
-                    <td>
-                      <a href="#" className="status_btn">
-                        Active
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      {" "}
-                      <a href="#" className="question_content">
-                        {" "}
-                        title here 1
-                      </a>
-                    </th>
-                    <td>Category name</td>
-                    <td>Teacher James</td>
-                    <td>$25.00</td>
-                    <td>
-                      <a href="#" className="status_btn">
-                        Active
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      {" "}
-                      <a href="#" className="question_content">
-                        {" "}
-                        title here 1
-                      </a>
-                    </th>
-                    <td>Category name</td>
-                    <td>Teacher James</td>
-                    <td>$25.00</td>
-                    <td>
-                      <a href="#" className="status_btn">
-                        Active
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      {" "}
-                      <a href="#" className="question_content">
-                        {" "}
-                        title here 1
-                      </a>
-                    </th>
-                    <td>Category name</td>
-                    <td>Teacher James</td>
-                    <td>$25.00</td>
-                    <td>
-                      <a href="#" className="status_btn">
-                        Active
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      {" "}
-                      <a href="#" className="question_content">
-                        {" "}
-                        title here 1
-                      </a>
-                    </th>
-                    <td>Category name</td>
-                    <td>Teacher James</td>
-                    <td>$25.00</td>
-                    <td>
-                      <a href="#" className="status_btn">
-                        Active
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      {" "}
-                      <a href="#" className="question_content">
-                        {" "}
-                        title here 1
-                      </a>
-                    </th>
-                    <td>Category name</td>
-                    <td>Teacher James</td>
-                    <td>$25.00</td>
-                    <td>
-                      <a href="#" className="status_btn">
-                        Active
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      {" "}
-                      <a href="#" className="question_content">
-                        {" "}
-                        title here 1
-                      </a>
-                    </th>
-                    <td>Category name</td>
-                    <td>Teacher James</td>
-                    <td>$25.00</td>
-                    <td>
-                      <a href="#" className="status_btn">
-                        Active
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      {" "}
-                      <a href="#" className="question_content">
-                        {" "}
-                        title here 1
-                      </a>
-                    </th>
-                    <td>Category name</td>
-                    <td>Teacher James</td>
-                    <td>$25.00</td>
-                    <td>
-                      <a href="#" className="status_btn">
-                        Active
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      {" "}
-                      <a href="#" className="question_content">
-                        {" "}
-                        title here 1
-                      </a>
-                    </th>
-                    <td>Category name</td>
-                    <td>Teacher James</td>
-                    <td>$25.00</td>
-                    <td>
-                      <a href="#" className="status_btn">
-                        Active
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      {" "}
-                      <a href="#" className="question_content">
-                        {" "}
-                        title here 1
-                      </a>
-                    </th>
-                    <td>Category name</td>
-                    <td>Teacher James</td>
-                    <td>$25.00</td>
-                    <td>
-                      <a href="#" className="status_btn">
-                        Active
-                      </a>
-                    </td>
-                  </tr>
+                  {data.map((item) => (
+                    <tr key={item.id}>
+                      <td>{item.id}</td>
+                      <td>{item.category}</td>
+                      <td>{item.os}</td>
+                      <td>{item.country}</td>
+                      <td>{item.date}</td>
+                      <td>
+                        <a
+                          href="#"
+                          className={
+                            item.status === "Connected"
+                              ? "status_btn"
+                              : "status_btn_danger"
+                          }
+                        >
+                          {item.status}
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
