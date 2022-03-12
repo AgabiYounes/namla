@@ -16,11 +16,7 @@ function SideBar() {
         </div>
         <ul id="sidebar_menu">
           <li className="">
-            <Link
-              to="/home"
-              className="has-arrow"
-              aria-expanded="false"
-            >
+            <Link to="/home" className="has-arrow" aria-expanded="false">
               <div className="nav_icon_small">
                 <i className="fa-solid fa-house"></i>
               </div>

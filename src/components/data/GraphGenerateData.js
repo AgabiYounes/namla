@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import ClusterChart from "../ClusterChart";
 
 function GraphGenerateData({ data }) {
-
   /* declare tableData state */
   const [tableData, setTableData] = useState([
     {

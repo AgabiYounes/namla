@@ -5,9 +5,6 @@ import TableGenerateData from "../components/data/TableGenerateData";
 import SummaryGenerateData from "../components/data/SummaryGenerateData";
 
 function Home() {
-
-
-
   return (
     <>
       <div className="main_content_iner overly_inner ">

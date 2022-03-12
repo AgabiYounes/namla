@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 function Breadcrumb({ page }) {
-
   /* A function that returns the complete current date */
   const getCurrentDate = () => {
     const d = new Date();
@@ -36,7 +35,6 @@ function Breadcrumb({ page }) {
     return `${dayName}, ${date} ${monthName} ${year}`;
   };
 
-  
   return (
     <>
       <div className="page_title_box d-flex flex-wrap align-items-center justify-content-between">

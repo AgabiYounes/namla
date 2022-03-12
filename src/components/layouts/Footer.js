@@ -10,9 +10,8 @@ function Footer() {
                   2020 © Namla- Designed with
                   <a href="https://www.younesagabi.com">
                     {" "}
-                    <i className="ti-heart"></i>{" "}
-                  
-                 by Younes AGABI </a>
+                    <i className="ti-heart"></i> by Younes AGABI{" "}
+                  </a>
                 </p>
               </div>
             </div>

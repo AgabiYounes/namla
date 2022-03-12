@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import KeyFigureSummary from "../KeyFigureSummary";
 
 function SummaryGenerateData({ data }) {
-
   /* declare summaryData state */
   const [summaryData, setsummaryData] = useState([
     {

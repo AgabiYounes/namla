@@ -2,9 +2,7 @@
 import Breadcrumb from "../components/layouts/Breadcrumb";
 import SummaryGenerateData from "../components/data/SummaryGenerateData";
 
-
 function Edge() {
-
   return (
     <>
       <div className="main_content_iner overly_inner ">

@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import DataTable from "../DataTable";
 
 function TableGenerateData({ data }) {
-
   /* declare tableData state */
   const [tableData, setTableData] = useState([
     {
@@ -57,8 +56,7 @@ function TableGenerateData({ data }) {
   const randomIntFromInterval = (min, max) =>
     Math.floor(Math.random() * (max - min + 1) + min);
 
-
-  /* use useEffect Hook to update values and re-render component */
+  /* use useEffect Hook to update random values and re-render component */
   useEffect(() => {
     const interval = setInterval(() => {
       setTableData(

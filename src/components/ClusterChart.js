@@ -11,8 +11,6 @@ import {
 } from "recharts";
 
 function ClusterChart({ data }) {
-
-
   return (
     <>
       <div className="white_card mb_30 card_height_100">

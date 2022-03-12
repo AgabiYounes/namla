@@ -9,7 +9,7 @@ function Clusters() {
         <div className="container-fluid p-0 ">
           <div className="row">
             <div className="col-12">
-                <Breadcrumb page="Clusters"></Breadcrumb>
+              <Breadcrumb page="Clusters"></Breadcrumb>
             </div>
           </div>
           <div className="row ">

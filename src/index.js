@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./assets/vendors/themefy_icon/themify-icons.css";
 import "./assets/vendors/niceselect/css/nice-select.css";
@@ -20,14 +20,13 @@ import "./assets/css/style.css";
 import "./assets/css/colors/default.css";
 import "./assets/css/bootstrap.min.css";
 
-
-import App from './App';
+import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 ReactDOM.render(
   <BrowserRouter>
     <App />
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

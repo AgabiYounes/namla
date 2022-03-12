@@ -1,6 +1,4 @@
 function DataTable({ data }) {
-
-
   return (
     <>
       <div className="white_card card_height_100 mb_30">

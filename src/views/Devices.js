@@ -9,7 +9,7 @@ function Devices() {
         <div className="container-fluid p-0 ">
           <div className="row">
             <div className="col-12">
-                <Breadcrumb page="Devices"></Breadcrumb>
+              <Breadcrumb page="Devices"></Breadcrumb>
             </div>
           </div>
           <div className="row ">
