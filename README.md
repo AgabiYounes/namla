@@ -1,4 +1,4 @@
-#Namla Technical Test
+# Namla Technical Test
 
 Hello, I developed this application with React and using : 
 - React v17 ```npm i react```
@@ -6,39 +6,40 @@ Hello, I developed this application with React and using :
 - Recharts ``` npm install recharts ``` for Charts
 
 
-##Project Installation
+## Project Installation
 After cloning the project, you must launch ```npm install``` to download the necessary packages (Node Modules) then launch the server with ```npm start``` .
 
-##UI Design 
+## UI Design 
 For the interface, I used the cyan of the Namla's logo as main color.
 > PS 01: I did not manage all the cases of the responsive version of the application.
+
 > PS 02: I put the sub sections and the sections on the left because in my opinion it's more ergonomic and allows to know directly that it's about the sub sections (the first concept for me leaves the user perplexed and wonders: what is the difference between the navbar and the side bar)
-###Home Page
+### Home Page
 
 ![Screen](/src/assets/img/screens/screen_home.PNG)
 
-###Clusters Page
+### Clusters Page
 
 ![Screen](/src/assets/img/screens/screen_clusters.PNG)
 
-###Devices Page
+### Devices Page
 
 ![Screen](/src/assets/img/screens/screen_devices.PNG)
 
-###Edge Page
+### Edge Page
 
 ![Screen](/src/assets/img/screens/screen_edge.PNG)
 
-##Project Structure
-1. Assets : the assets folder contains all the necessary assets (images, CSS, Vendors)
-2. Layouts: the layouts folder contains the layout components (SideBar, NavBar, Breadcrumb and Footer)
+## Project Structure
+1. Assets : the ```assets``` folder contains all the necessary assets (images, CSS, Vendors)
+2. Layouts: the ```layouts``` folder contains the layout components (```SideBar```, ```NavBar```, ```Breadcrumb``` and ```Footer```)
 3. The components used in the views are :
-    - ClusterChart : a dynamic graph for the Clusters page.
-    - DataTable : a dynamic table for the Devices page.
-    - KeyFigureSummary : Summary for the Edge page.
-4. Data layer: I added a "data" folder which contains the 3 components responsible for generating random data every 10 seconds for the 3 pages (GraphGenerateData for the ClusterChart, SummaryGenerateData for KeyFigureSummary and TableGenerateData for DataTable)
-5. The Views : the views folder contains the requested pages (Home, Edge, Devices, Clusters)
-6. The Error page is an error page that is displayed when the url does not exist.
-
-
-Translated with www.DeepL.com/Translator (free version)
+    - ```ClusterChart``` : a dynamic graph for the ```Clusters``` page.
+    - ```DataTable``` : a dynamic table for the ```Devices``` page.
+    - ```KeyFigureSummary``` : Summary for the ```Edge``` page.
+4. Data layer: I added a ```data``` folder which contains the 3 components responsible for generating random data every 10 seconds for the 3 pages 
+    - ```GraphGenerateData``` for the ```ClusterChart```
+    - ```SummaryGenerateData``` for ```KeyFigureSummary``` 
+    - ```TableGenerateData``` for ```DataTable```
+5. The Views : the ```views``` folder contains the requested pages (```Home```, ```Edge```, ```Devices```, ```Clusters```)
+6. The ```Error``` page is an error page that is displayed when the URL does not exist.
