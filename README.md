@@ -6,9 +6,12 @@ Hello, I developed this application with React and using :
 - Recharts ``` npm install recharts ``` for Charts
 
 
-## Project Installation
+## Running Project
+### Without Docker
 After cloning the project, you must launch ```npm install``` to download the necessary packages (Node Modules) then launch the server with ```npm start``` .
-
+### With Docker image
+1. ```docker build -f Dockerfile -t namla``` the command will create an image called namla in docker
+2. ```docker run -it -p 4001:3000 namla``` the command create a container, which we use to run the image, we exposed the port 3000 where the react application runs to port 4001 outside the container.
 ## UI Design 
 For the interface, I used the cyan of the Namla's logo as main color.
 > PS 01: I did not manage all the cases of the responsive version of the application.
