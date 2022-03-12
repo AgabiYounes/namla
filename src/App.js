@@ -25,7 +25,7 @@ function App() {
           <Route path="/home/clusters" element={<Clusters />} />
           <Route path="/home/edge" element={<Edge />} />
           <Route path="/home/devices" element={<Devices />} />
-          <Route element={<Error/>} />
+          <Route path="*" element={<Error />} />
         </Routes>
 
         <Footer></Footer>

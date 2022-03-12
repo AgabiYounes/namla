@@ -7,7 +7,7 @@ function DataTable({ data }) {
         <div className="white_card_header">
           <div className="box_header m-0">
             <div className="main-title">
-              <h3 className="m-0">Data table</h3>
+              <h3 className="m-0">Devices list</h3>
             </div>
           </div>
         </div>
