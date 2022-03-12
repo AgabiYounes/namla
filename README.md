@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+#Namla Technical Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello, I developed this application with React and using : 
+- React v17 ```npm i react```
+- React router v6 ``` npm install react-router-dom ``` for the routing of the application
+- Recharts ``` npm install recharts ``` for Charts
 
-## Available Scripts
 
-In the project directory, you can run:
+##Project Installation
+After cloning the project, you must launch ```npm install``` to download the necessary packages (Node Modules) then launch the server with ```npm start``` .
 
-### `npm start`
+##UI Design 
+For the interface, I used the cyan of the Namla's logo as main color.
+> PS 01: I did not manage all the cases of the responsive version of the application.
+> PS 02: I put the sub sections and the sections on the left because in my opinion it's more ergonomic and allows to know directly that it's about the sub sections (the first concept for me leaves the user perplexed and wonders: what is the difference between the navbar and the side bar)
+###Home Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screen](/src/assets/img/screens/screen_home.PNG)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###Clusters Page
 
-### `npm test`
+![Screen](/src/assets/img/screens/screen_clusters.PNG)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###Devices Page
 
-### `npm run build`
+![Screen](/src/assets/img/screens/screen_devices.PNG)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+###Edge Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Screen](/src/assets/img/screens/screen_edge.PNG)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##Project Structure
+1. Assets : the assets folder contains all the necessary assets (images, CSS, Vendors)
+2. Layouts: the layouts folder contains the layout components (SideBar, NavBar, Breadcrumb and Footer)
+3. The components used in the views are :
+    - ClusterChart : a dynamic graph for the Clusters page.
+    - DataTable : a dynamic table for the Devices page.
+    - KeyFigureSummary : Summary for the Edge page.
+4. Data layer: I added a "data" folder which contains the 3 components responsible for generating random data every 10 seconds for the 3 pages (GraphGenerateData for the ClusterChart, SummaryGenerateData for KeyFigureSummary and TableGenerateData for DataTable)
+5. The Views : the views folder contains the requested pages (Home, Edge, Devices, Clusters)
+6. The Error page is an error page that is displayed when the url does not exist.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Translated with www.DeepL.com/Translator (free version)
